@@ -10,6 +10,7 @@ CREATE_USER_URL = reverse('user:create')
 def create_user(**params):
     return get_user_model().objects.create_user(**params)
 
+
 class PublicUserApiTests(TestCase):
     """Test the users API"""
 
